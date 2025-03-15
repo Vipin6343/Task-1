@@ -1,0 +1,46 @@
+<!-- HTML File: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Engagement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Community Engagement Platform</h1>
+        
+        <div class="tabs">
+            <button onclick="showTab('poll')">Create a Poll</button>
+            <button onclick="showTab('post')">Post Your Thoughts</button>
+            <button onclick="showTab('question')">Ask a Question</button>
+        </div>
+
+        <div id="poll" class="tab-content">
+            <h2>Create a Poll</h2>
+            <input type="text" id="poll-question" placeholder="Enter poll question">
+            <button onclick="submitPoll()">Submit Poll</button>
+        </div>
+        
+        <div id="post" class="tab-content">
+            <h2>Post Your Thoughts</h2>
+            <textarea id="post-content" placeholder="Write your thoughts..."></textarea>
+            <button onclick="submitPost()">Post</button>
+        </div>
+
+        <div id="question" class="tab-content">
+            <h2>Ask a Question</h2>
+            <input type="text" id="question-content" placeholder="Enter your question">
+            <button onclick="submitQuestion()">Ask</button>
+        </div>
+
+        <div id="community">
+            <h2>Community Posts</h2>
+            <div id="posts"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(66, 64%, 37%);
+}
+.container {
+    width: 50%;
+    margin: auto;
+    background: rgb(180, 76, 76);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.tabs button {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+#community {
+    margin-top: 20px;
+}
+.post {
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
